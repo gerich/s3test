@@ -17,7 +17,7 @@ file: file,my-image.png;
 HTTP 200
 [Asserts]
 header "Content-Type" contains "application/json; charset=utf-8"
-jsonpath "$.hash" == "ff14c065c18db8d1b66afa2da2d9e580"
+jsonpath "$.hash" == "1e02a85bee78984d20942bf213f4c461"
 
 
 # list files
@@ -35,7 +35,7 @@ GET http://{{host}}:8080/api/v1/download/my-image.png
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZm9vIn0.6ee7NeQqcFzmPymq-5N3h52P98_JCOKwsrwye_SVfZA
 HTTP 200
 [Asserts]
-md5 == hex,ff14c065c18db8d1b66afa2da2d9e580;
+md5 == hex,1e02a85bee78984d20942bf213f4c461;
 
 
 # download text
